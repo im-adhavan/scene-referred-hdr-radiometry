@@ -192,7 +192,7 @@ Generated outputs:
 ## Repository Structure
 
 ```bash
-hdr_perceptual/
+scene-referred-hdr-radiometry/
 
 ├── src/
 │   ├── analysis.py
