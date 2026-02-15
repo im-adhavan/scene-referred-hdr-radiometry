@@ -76,9 +76,7 @@ This ensures HDR merging operates in **scene-referred linear space**.
 
 HDR merging follows a weighted radiance model:
 
-\[
-L = \frac{\sum w(z) \cdot \frac{z}{t}}{\sum w(z)}
-\]
+L = Σ [ w(z) · (z / t) ] / Σ w(z)
 
 Where:
 
@@ -104,9 +102,7 @@ data/hdr_exr/Scene_Name.exr
 
 Dynamic range is computed robustly using percentile-based luminance:
 
-\[
-DR = \log_{10} \left( \frac{P_{99.9}}{P_{0.1}} \right)
-\]
+DR = log₁₀( P₉₉.₉ / P₀.₁ )
 
 Where luminance is:
 
